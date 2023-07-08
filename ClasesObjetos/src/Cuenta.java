@@ -12,7 +12,7 @@ public class Cuenta {
 
     // Metodos
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
     public void setSaldo(double saldo) {
@@ -20,11 +20,11 @@ public class Cuenta {
     }
 
     public void retiro(double monto){
-        this.saldo -= monto;
+        this.saldo -= monto;  //this.saldo = this.saldo - monto;
     }
 
     public void deposito(double monto){
-        this.saldo += monto;
+        this.saldo += monto;  //this.saldo = this.saldo + monto;
     }
 
 

@@ -25,8 +25,11 @@ public class Main {
 
 
 /*
+Una clase es la representacion de un objeto en la vida real, por medio de atributos y metodos
 
 El nombre de la clase debe empezar con Mayuscula
+
+El nombre del archivo debe ser el mismo nombre de la clase, con la extension .java
 
 AutosModernos
 
@@ -41,8 +44,8 @@ public class Componentes{
 }
 
 Dentro de la clase se distinguen 2 partes
-- Los atributos (pr4opiedads y/o caracteristicas )
-- Los Métodos (acciones que realiza el objeto)
+- Los atributos (propiedads y/o caracteristicas )
+- Los métodos y/o funciones (acciones que realiza el objeto)
 
 
 Atributos
@@ -53,10 +56,12 @@ Ej:
 
 private int codigo = 001;
 public String nombre = 'Oscar';
+public boolean esLibre;
+
 
 Métodos
 
-modificador_acceso tipo_retorno nombremetodo(tipo nomParametro, tipo nomParametro2....){
+modificador_acceso tipo_retorno nombreMetodo(tipo nomParametro, tipo nomParametro2....){
 
 }
 
@@ -65,7 +70,7 @@ public int sumar(int num1, int num2) {
     return num1 + mum2;
 }
 
-Cronstructores
+Constructores
 Es un tipo de metodo especial que permite la construccion de objetos (instancia)
 La finalidad es inicializar los atributos
 
@@ -84,6 +89,10 @@ public Main(){
 public Main(int nombre){
 }
 
+Sobrecarga de metodos
+Decimos que un metodo esta sobrecargado cuando existen 2 o mas metodos con el mismo nombre y tipo de retorno
+pero con un numero distinto de parametros.
+
 El ejemplo anterior muestra la caracteristica de sobrecarga de metodos
 
 Convenciones de Java
@@ -100,17 +109,16 @@ Ej: sumar, ascelerar, escribirCuenta
 OBJETOS
 Los objetos son variables de un tipo complejo de dato (clase)
 
-public int numero;
+tipo identificador;
+Cuenta cuenta1;
 
-public Cuenta cuenta1;
-
-Pordefecto un objeto se inicializa con nulo (null)
-Para inicializar un objeto es distinto a inicializar una variable de tipo primitivo
+Por defecto un objeto se inicializa con nulo (null)
+Para inic4ializar un objeto es distinto a inicializar una variable de tipo primitivo
 se utilizala el operador new
 Se llama al constructor de la clase que queremos instancia
 
-public Cuenta cuenta1 = new Cuenta();
-public Cuenta cuenta2 = new Cuenta(20);
+Cuenta cuenta1 = new Cuenta();
+Cuenta cuenta2 = new Cuenta(20);
 
 manejo de Objetos
 Consiste en acceder:
@@ -126,11 +134,11 @@ nombreObjeto.atributo
 cuenta1.saldo = 15;
 
 Acceso a metodos
-nombreObjeto.nombremetodo();
+nombreObjeto.nombreMetodo();
 
 cuenta1.deposito(10);
 
-La posibilidad de acceder a un metodo o atributo depende del modificado de acceso de los mismos
+Nota: La posibilidad de acceder a un metodo o atributo depende del modificador de acceso de los mismos
 
 
 
