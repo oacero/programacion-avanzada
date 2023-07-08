@@ -2,17 +2,21 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Medico medicoGeneral = new Medico();
+        MedicoDeCabecera medicoDomicilio = new MedicoDeCabecera();
+        Cirujano medicoCirujano = new Cirujano();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        //System.out.println("Tratar pacientes");
+        System.out.println("Medico General:");
+        medicoGeneral.tratarPaciente();
+        System.out.println("Medico a Domicilio:");
+        medicoDomicilio.tratarPaciente();
+        medicoDomicilio.aconsejaPacientes();
+        System.out.println("Medico a Cirujano:");
+        medicoCirujano.tratarPaciente();
+        medicoCirujano.hacerIncision();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
     }
 }
 
@@ -55,6 +59,19 @@ Ejemplo
 
 Medico
   |- MedicoDe
+
+Ejercicio
+
+- Cuántos atributos tiene la clase Cirujano?  R: 1
+- Cuántos atributos tiene la clase MedicoDeCabecera?  R: 2
+- Cuántos metodos tiene la clase Medico?  R: 1
+- Cuántos metodos tiene la clase Cirujano?  R: 2
+- Cuántos metodos tiene la clase MedicoDeCabecera?  R: 2
+- Puede un MedicoDeCabecera tratar pacientes?  R: SI
+- Puede un MedicoDeCabecera hacer incisiones?  R: NO
+
+
+
 
 
 
