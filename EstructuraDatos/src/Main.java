@@ -2,8 +2,33 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Argumento");
+        for(int x = 0; x < args.length; x++){
+            System.out.println("Argumento " + x + " :" + args[x]);
+        }
 
-        int[] numeros = new int[10];
+
+        int[][] matriz = new int[4][];
+
+        // Llenar de datos en matriz
+        for(int i = 0; i < matriz.length; i++){
+            matriz[i] = new int[5];
+            for(int j = 0; j < matriz[i].length; j++){
+                matriz[i][j] = i + j;
+            }
+        }
+
+        // Imprimir por pantalla los datos
+        for(int i = 0; i < matriz.length; i++){
+            for(int j = 0; j < matriz[i].length; j++){
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+
+        /*int[] numeros = new int[10];
 
         numeros[0] = 1;
         numeros[1] = 2;
@@ -44,7 +69,7 @@ public class Main {
         }
 
 
-        //System.out.println("Mascotas : " + nombresMascotas[2] );
+        //System.out.println("Mascotas : " + nombresMascotas[2] );*/
 
 
 

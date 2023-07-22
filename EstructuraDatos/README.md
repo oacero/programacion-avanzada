@@ -65,5 +65,24 @@ numero[9] 11;
 ```
 
 ## Arreglos Multidimensionales
+<p>Un arreglo multidimensional es una arreglo de arreglos, es decir una matriz</p>
+<p>modificador_acceso tipo[][] nombre;</p>
+
+```
+public int[][] numeros;
+
+public int[][] numeros = new int[4][2];
+
+public int[][] numeros = new int[4][];
+
+numeros[0] = new int[3]
+numeros[1] = new int[10]
+numeros[2] = new int[5]
 
 
+protected int[][] numeros = {{1, 2, 3}, {4, 5, 6} ,{7 ,8 ,9}};
+
+
+
+
+```
