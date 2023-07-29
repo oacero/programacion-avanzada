@@ -82,7 +82,9 @@ numeros[2] = new int[5]
 
 protected int[][] numeros = {{1, 2, 3}, {4, 5, 6} ,{7 ,8 ,9}};
 
-
-
-
 ```
+
+# COLECCIONES
+<p>Una coleccion es un objeto que agrupa varios elementos en uno solo.
+
+Utilizamos para guarar y manipular datos, asi como para transmitir informacion entre metodos</p>
