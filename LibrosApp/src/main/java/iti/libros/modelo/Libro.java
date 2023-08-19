@@ -1,2 +1,27 @@
-package iti.libros.modelo;public class Libro {
+package iti.libros.modelo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class Libro {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer id;
+    String nombreLibro;
+    String autor;
+    Integer anioPublicacion;
+    Double precio;
+    Integer existencia;
 }
